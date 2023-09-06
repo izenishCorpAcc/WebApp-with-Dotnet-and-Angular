@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj": {}
+    "d:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj": {
+    "d:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj",
+        "projectUniqueName": "d:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj",
+        "projectPath": "d:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\API.csproj",
         "packagesPath": "C:\\Users\\jenish.prajapati\\.nuget\\packages\\",
-        "outputPath": "D:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\obj\\",
+        "outputPath": "d:\\Courses\\WebApp-with-Dotnet-and-Angular\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jenish.prajapati\\AppData\\Roaming\\NuGet\\NuGet.Config",
