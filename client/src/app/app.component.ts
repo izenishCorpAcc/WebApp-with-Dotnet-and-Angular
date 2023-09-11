@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
     // Constructor where an instance of HttpClient is injected
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
     // This method is called when the component is initialized
 
     // Make an HTTP GET request to the specified API endpoint
