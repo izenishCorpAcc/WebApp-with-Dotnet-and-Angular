@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="loggedIn">
           <li class="nav-item">
             <a class="nav-link "  href="#">Matches</a>
           </li>
@@ -16,10 +16,18 @@
             <a class="nav-link " >Messages</a>
           </li>
         </ul>
+        <div class="dropdown" *ngIf="loggedIn" dropdown>
+            <a  class="dropdown-toggle text-light" dropdownToggle>Welcome User</a>
+            <div class="dropdown-menu" *dropdownMenu>
+                <a  class="dropdown-item">Edit Profile</a>
+                <a  class="dropdown-item" (click)="logout()">Logout</a>
+            </div>
+        </div>
         <form class="d-flex" #loginForm="ngForm"  autocomplete="off" (ngSubmit)="login()">
-          <input class="form-control me-2" type="text" placeholder="UserName" name="UserName" [(ngModel)]="model.UserNasme">
+          <input class="form-control me-2" type="text" placeholder="UserName" name="UserName" [(ngModel)]="model.UserName">
           <input class="form-control me-2" type="password" placeholder="Password" name="Password" [(ngModel)]="model.Password">
           <button class="btn btn-outline-success" type="submit" >Login</button> <!-- we can also use this here (click)="login()"-->
+          <!-- <button class="btn btn-outline-success" type="submit" *ngIf="loggedIn" (click)="logout()">Log Out</button> -->
           
         </form>
       </div>
