@@ -23,8 +23,13 @@ export class AppComponent {     //logic
 //   },2000);   
 // }
 
-  doSomething(){
-   this.values.push(this.x);
+  doSomething(form: any){
+    console.log(form);
+    if (form.valid){
+      
+      this.values.push(form.value.x);
+    }
+  //  this.values.push(this.x);
   this.x="";
   // console.log(this.d);
   // alert(this.d);

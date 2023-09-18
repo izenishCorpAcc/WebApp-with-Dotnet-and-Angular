@@ -1,8 +1,12 @@
 <!-- {{d}} -->
-<input type="text" [(ngModel)]="x"/> <br>
+<form (ngSubmit)="doSomething(f)" #f="ngForm">
+<!-- <input type="text" [(ngModel)]="x"/> <br> -->
+<input type="text" ngModel name="x" required/> <br>
 <br>
-<button type="submit" value="Click" (click)="doSomething()" >CLICK ME</button>
+<button type="submit">CLICK ME</button>  
+<!-- value="Click" (click)="doSomething()"  -->
 <br><br><br><br><br>
+</form>
 <!-- <ng-container *ngFor="let v of values">
   <h5>{{ v }}</h5>
 </ng-container> -->
