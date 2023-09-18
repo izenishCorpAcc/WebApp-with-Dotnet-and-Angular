@@ -1,8 +1,12 @@
-
-<button type="submit" value="Click" (click)="doSomething()">CLICK ME</button>
-<br>
+<!-- {{d}} -->
 <input type="text" [(ngModel)]="x"/> <br>
+<br>
+<button type="submit" value="Click" (click)="doSomething()" >CLICK ME</button>
 <br><br><br><br><br>
-<ng-container *ngFor="let v of values">
+<!-- <ng-container *ngFor="let v of values">
   <h5>{{ v }}</h5>
-</ng-container>
+</ng-container> -->
+
+<!-- {{y}} -->
+
+<app-product *ngFor="let product of values" [productName]="product" (removeItem)="rthis(product)"></app-product>
